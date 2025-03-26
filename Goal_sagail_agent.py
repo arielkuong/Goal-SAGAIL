@@ -101,7 +101,7 @@ class Goal_sagail_agent:
         if not os.path.exists(self.model_path):
             os.mkdir(self.model_path)
 
-        self.save_name_suffix = 'goalsgail_new_suboptimal_gailweight' + str(self.args.gail_weight) + gail_anneal_name +\
+        self.save_name_suffix = 'goalsagail_suboptimal_gailweight' + str(self.args.gail_weight) + gail_anneal_name +\
                                 '_matchdislimit' + str(self.args.match_dis_limit) + '_rewardD_demo' + str(self.args.demo_length)
 
         self.best_success_rate = 0.0
