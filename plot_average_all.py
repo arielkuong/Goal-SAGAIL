@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from arguments import get_args
+from learn_utils.arguments import get_args
 import os
 
 if __name__ == "__main__":

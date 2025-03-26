@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from arguments import get_args
+from learn_utils.arguments import get_args
 import os
 
 seed = [123, 679, 274, 835, 516]
@@ -28,11 +28,11 @@ if __name__ == "__main__":
     # eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
     # eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
 
-    eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_goalsgail_new_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_goalsgail_new_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_goalsgail_new_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalsgail_new_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalsgail_new_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
 
     data_len = 100
     data1 = np.load(eval_file_path_1)[:data_len]

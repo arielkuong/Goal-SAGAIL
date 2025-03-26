@@ -1,6 +1,6 @@
 import torch
 from models import actor
-from arguments import get_args
+from learn_utils.arguments import get_args
 import gymnasium as gym
 import gymnasium_robotics
 import numpy as np
