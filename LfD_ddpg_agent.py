@@ -69,7 +69,7 @@ class LfD_ddpg_agent:
 
         # # initialise demo weight and anneal
         # self.batch_demo_weight = self.args.batch_demo_weight
-        demo_anneal_name = ''
+        # demo_anneal_name = ''
         # if self.args.enable_demo_anneal:
         #     print('Enable demo weight annealing')
         #     self.anneal_co = 1.0
@@ -87,7 +87,7 @@ class LfD_ddpg_agent:
         if not os.path.exists(self.model_path):
             os.mkdir(self.model_path)
 
-        self.save_name_suffix = 'lfd_ddpg+her_suboptimal_demo' + str(self.args.demo_length) + demo_anneal_name
+        self.save_name_suffix = 'lfd_ddpg+her_suboptimal_demo' + str(self.args.demo_length)
 
         self.best_success_rate = 0.0
 
@@ -323,7 +323,7 @@ class LfD_ddpg_agent:
         critic_loss.backward()
         #sync_grads(self.critic_network)
         self.critic_optim.step()
-        
+
 
     # # update the network
     # def _update_network_ddpg_matchsample(self):

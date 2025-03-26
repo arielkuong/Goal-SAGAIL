@@ -79,13 +79,13 @@ class Goal_sagail_agent:
             self.anneal_co = 1.0
             gail_anneal_name = 'anneal'
 
-        # initialise demo weight and anneal
-        self.batch_demo_weight = self.args.batch_demo_weight
-        demo_anneal_name = ''
-        if self.args.enable_demo_anneal:
-            print('Enable demo weight annealing')
-            self.anneal_co = 1.0
-            demo_anneal_name = 'anneal'
+        # # initialise demo weight and anneal
+        # self.batch_demo_weight = self.args.batch_demo_weight
+        # demo_anneal_name = ''
+        # if self.args.enable_demo_anneal:
+        #     print('Enable demo weight annealing')
+        #     self.anneal_co = 1.0
+        #     demo_anneal_name = 'anneal'
 
         print('Match distance limit = {}'.format(self.args.match_dis_limit))
 
@@ -102,7 +102,7 @@ class Goal_sagail_agent:
             os.mkdir(self.model_path)
 
         self.save_name_suffix = 'goalsgail_new_suboptimal_gailweight' + str(self.args.gail_weight) + gail_anneal_name +\
-                                '_matchdislimit' + str(self.args.match_dis_limit) + '_rewardD_demo' + str(self.args.demo_length) + demo_anneal_name
+                                '_matchdislimit' + str(self.args.match_dis_limit) + '_rewardD_demo' + str(self.args.demo_length)
 
         self.best_success_rate = 0.0
 
@@ -299,11 +299,11 @@ class Goal_sagail_agent:
                 self.anneal_co = 1.0 - success_rate
                 self.gail_weight = self.args.gail_weight*self.anneal_co
 
-            # anneal demo weight if necessary
-            if self.args.enable_demo_anneal and epoch > 0:
-                # self.anneal_co = np.power(1.0 - success_rate, epoch)
-                self.anneal_co = 1.0 - success_rate
-                self.batch_demo_weight = self.args.batch_demo_weight*self.anneal_co
+            # # anneal demo weight if necessary
+            # if self.args.enable_demo_anneal and epoch > 0:
+            #     # self.anneal_co = np.power(1.0 - success_rate, epoch)
+            #     self.anneal_co = 1.0 - success_rate
+            #     self.batch_demo_weight = self.args.batch_demo_weight*self.anneal_co
 
 
     # pre_process the inputs
