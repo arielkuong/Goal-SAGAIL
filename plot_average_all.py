@@ -15,13 +15,13 @@ if __name__ == "__main__":
     eval_file_path_2_high = args.save_dir + args.env_name + '/Average_result_lfd_ddpg+her_suboptimal_demo' + str(args.demo_length) +'_5seeds/data_high.npy'
     eval_file_path_2_low = args.save_dir + args.env_name + '/Average_result_lfd_ddpg+her_suboptimal_demo' + str(args.demo_length) +'_5seeds/data_low.npy'
 
-    eval_file_path_3_mean = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight0.5anneal_demo' + str(args.demo_length) +'_5seeds/data_mean.npy'
-    eval_file_path_3_high = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight0.5anneal_demo' + str(args.demo_length) +'_5seeds/data_high.npy'
-    eval_file_path_3_low = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight0.5anneal_demo' + str(args.demo_length) +'_5seeds/data_low.npy'
+    eval_file_path_3_mean = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_demo' + str(args.demo_length) +'_5seeds/data_mean.npy'
+    eval_file_path_3_high = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_demo' + str(args.demo_length) +'_5seeds/data_high.npy'
+    eval_file_path_3_low = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_demo' + str(args.demo_length) +'_5seeds/data_low.npy'
 
-    eval_file_path_4_mean = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_demo' + str(args.demo_length) +'_5seeds/data_mean.npy'
-    eval_file_path_4_high = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_demo' + str(args.demo_length) +'_5seeds/data_high.npy'
-    eval_file_path_4_low = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_demo' + str(args.demo_length) +'_5seeds/data_low.npy'
+    eval_file_path_4_mean = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_demo' + str(args.demo_length) +'_5seeds/data_mean.npy'
+    eval_file_path_4_high = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_demo' + str(args.demo_length) +'_5seeds/data_high.npy'
+    eval_file_path_4_low = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_demo' + str(args.demo_length) +'_5seeds/data_low.npy'
 
 
     data_len = 100

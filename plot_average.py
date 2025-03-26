@@ -16,23 +16,23 @@ if __name__ == "__main__":
     # eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_her.npy'
     # eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_her.npy'
 
-    # eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
+    eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '.npy'
 
-    # eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
-    # eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalgail_suboptimal_gailweight0.5anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_rewardD_demo'+ str(args.demo_length) + '.npy'
 
-    eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
-    eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_1 = args.save_dir + args.env_name + '/seed_' + str(seed[0]) + '/eval_success_rates_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_2 = args.save_dir + args.env_name + '/seed_' + str(seed[1]) + '/eval_success_rates_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_3 = args.save_dir + args.env_name + '/seed_' + str(seed[2]) + '/eval_success_rates_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_4 = args.save_dir + args.env_name + '/seed_' + str(seed[3]) + '/eval_success_rates_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_rewardD_demo'+ str(args.demo_length) + '.npy'
+    # eval_file_path_5 = args.save_dir + args.env_name + '/seed_' + str(seed[4]) + '/eval_success_rates_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_rewardD_demo'+ str(args.demo_length) + '.npy'
 
     data_len = 100
     data1 = np.load(eval_file_path_1)[:data_len]
@@ -58,9 +58,9 @@ if __name__ == "__main__":
     data_high = data_mean + data_std
 
     # save_data_path = args.save_dir + args.env_name + '/Average_result_her_' + str(len(seed)) + 'seeds'
-    # save_data_path = args.save_dir + args.env_name + '/Average_result_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '_' + str(len(seed)) + 'seeds'
-    # save_data_path = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight0.5anneal_demo'+ str(args.demo_length) + '_' + str(len(seed)) + 'seeds'
-    save_data_path = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight0.5anneal_matchdislimit0.25_demo'+ str(args.demo_length) + '_' + str(len(seed)) + 'seeds'
+    save_data_path = args.save_dir + args.env_name + '/Average_result_lfd_ddpg+her_suboptimal_demo'+ str(args.demo_length) + '_' + str(len(seed)) + 'seeds'
+    # save_data_path = args.save_dir + args.env_name + '/Average_result_goalgail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_demo'+ str(args.demo_length) + '_' + str(len(seed)) + 'seeds'
+    # save_data_path = args.save_dir + args.env_name + '/Average_result_goalsagail_suboptimal_gailweight' + str(args.gail_weight) + 'anneal_matchdislimit' + str(args.match_dis_limit) + '_demo'+ str(args.demo_length) + '_' + str(len(seed)) + 'seeds'
 
     if not os.path.exists(save_data_path):
         os.mkdir(save_data_path)
