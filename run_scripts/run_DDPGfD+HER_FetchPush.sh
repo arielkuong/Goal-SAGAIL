@@ -1,0 +1,9 @@
+python3 train.py --env-name=FetchPush-v1 --n-epochs=20 --n-cycles=50 --num-rollouts-per-cycle=40 --n-batches=40 --batch-size=5120 --buffer-size=1000000 --replay-strategy=future --n-test-rollouts=100 --save-dir=saved_models_average/ --demo-length=10 --gail-weight=0.5 --enable-gail-anneal --expert-buffer-size=200 --match-dis-limit=0.02 --lfd-strategy=lfd_ddpg_her --device=cuda:0 --seed=123
+
+python3 train.py --env-name=FetchPush-v1 --n-epochs=20 --n-cycles=50 --num-rollouts-per-cycle=40 --n-batches=40 --batch-size=5120 --buffer-size=1000000 --replay-strategy=future --n-test-rollouts=100 --save-dir=saved_models_average/ --demo-length=10 --gail-weight=0.5 --enable-gail-anneal --expert-buffer-size=200 --match-dis-limit=0.02 --lfd-strategy=lfd_ddpg_her --device=cuda:0 --seed=679
+
+python3 train.py --env-name=FetchPush-v1 --n-epochs=20 --n-cycles=50 --num-rollouts-per-cycle=40 --n-batches=40 --batch-size=5120 --buffer-size=1000000 --replay-strategy=future --n-test-rollouts=100 --save-dir=saved_models_average/ --demo-length=10 --gail-weight=0.5 --enable-gail-anneal --expert-buffer-size=200 --match-dis-limit=0.02 --lfd-strategy=lfd_ddpg_her --device=cuda:0 --seed=274
+
+python3 train.py --env-name=FetchPush-v1 --n-epochs=20 --n-cycles=50 --num-rollouts-per-cycle=40 --n-batches=40 --batch-size=5120 --buffer-size=1000000 --replay-strategy=future --n-test-rollouts=100 --save-dir=saved_models_average/ --demo-length=10 --gail-weight=0.5 --enable-gail-anneal --expert-buffer-size=200 --match-dis-limit=0.02 --lfd-strategy=lfd_ddpg_her --device=cuda:0 --seed=835
+
+python3 train.py --env-name=FetchPush-v1 --n-epochs=20 --n-cycles=50 --num-rollouts-per-cycle=40 --n-batches=40 --batch-size=5120 --buffer-size=1000000 --replay-strategy=future --n-test-rollouts=100 --save-dir=saved_models_average/ --demo-length=10 --gail-weight=0.5 --enable-gail-anneal --expert-buffer-size=200 --match-dis-limit=0.02 --lfd-strategy=lfd_ddpg_her --device=cuda:0 --seed=516
